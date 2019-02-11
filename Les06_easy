@@ -1,0 +1,71 @@
+
+# Задача - 1
+# Опишите несколько классов TownCar, SportCar, WorkCar, PoliceCar
+# У каждого класса должны быть следующие аттрибуты:
+# speed, color, name, is_police - Булево значение.
+# А так же несколько методов: go, stop, turn(direction) - которые должны сообщать,
+#  о том что машина поехала, остановилась, повернула(куда)
+
+class TownCar:
+    def go(self):
+        print('Поехала')
+    def stop(self):
+        print('Остановилась')
+    def turn(direction):
+        print('Повернула(куда)')
+    name = 'Kia Rio'
+    color = 'White'
+    speed = '150 km/h'
+    is_police = False
+
+class SportCar:
+    def go(self):
+        print('Поехала')
+    def stop(self):
+        print('Остановилась')
+    def turn(direction):
+        print('Повернула')
+    name = 'Porsche 911'
+    color = 'White'
+    speed = '300 km/h'
+    is_police = False
+
+class WorkCar:
+    def go(self):
+        print('Поехала')
+    def stop(self):
+        print('Остановилась')
+    def turn(direction):
+        print('Повернула')
+    name = 'VW Transporter'
+    color = 'White'
+    speed = '150 km/h'
+    is_police = False
+
+class PoliceCar:
+        def go(self):
+            print('Поехала')
+        def stop(self):
+            print('Остановилась')
+        def turn(direction):
+            print('Повернула')
+        name = 'Ford Police Interceptor'
+        color = 'White&Black'
+        speed = '300 km/h'
+        is_police = True
+
+car1 = TownCar()
+print(car1.name)
+print(car1.speed)
+print('Is it police?', car1.is_police)
+
+car2 = SportCar()
+print(car2.go())
+print(car2.speed)
+print('Is it police?', car2.is_police)
+
+car3 = PoliceCar()
+print(car2.stop())
+print(car3.speed)
+print('Is it police?', car3.is_police)
+
